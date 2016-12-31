@@ -259,6 +259,11 @@ header .intro-text .intro-heading {
   background-size: contain;
   background-position: center;
 }
+@media (max-width: 1200px) {
+  header .intro-text {
+    padding-top: 20%;
+  }
+}
 header .intro-scroll {
   font-weight: 400;
   font-size: 30px;

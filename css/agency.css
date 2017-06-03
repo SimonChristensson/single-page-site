@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2016 Start Bootstrap
+ * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
@@ -11,7 +11,7 @@ body {
   color: #777777;
 }
 .text-primary {
-  color: #fed136;
+  color: #ddd;
 }
 p {
   font-size: 14px;
@@ -28,13 +28,13 @@ a.active {
   outline: none;
 }
 a {
-  color: #fed136;
+  color: #ddd;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: #c4c4c4;
 }
 h1,
 h2,
@@ -57,8 +57,8 @@ h6 {
 }
 .btn-primary {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #ddd;
+  border-color: #ddd;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -69,8 +69,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: #c4c4c4;
+  border-color: #bebebe;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -92,17 +92,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #ddd;
+  border-color: #ddd;
 }
 .btn-primary .badge {
-  color: #fed136;
+  color: #ddd;
   background-color: white;
 }
 .btn-xl {
   color: white;
   background-color: #e67e00;
-  border-color: #fed136;
+  border-color: #ddd;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -117,7 +117,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-xl {
   color: white;
   background-color: #b36200;
-  border-color: #f6bf01;
+  border-color: #bebebe;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -140,15 +140,16 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
   background-color: #e67e00;
-  border-color: #fed136;
+  border-color: #ddd;
 }
 .btn-xl .badge {
   color: #e67e00;
   background-color: white;
 }
 .navbar-custom {
-  background-color: white;
-  border-color: transparent;
+  opacity: 0.9;
+  background-color: #222222;
+  padding: 5px 0;
 }
 .navbar-custom .navbar-brand {
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
@@ -157,48 +158,38 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #fec503;
+  color: #c4c4c4;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
+  border: none;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 12px;
-}
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
-  background-color: #fed136;
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
+  color: #d5d5d5;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #fed136;
+  color: white;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
+  opacity: 1;
   color: white;
-  background-color: #fed136;
-}
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
-  color: white;
-  background-color: #fec503;
+  background: none;
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    background-color: white;
-    padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -216,7 +207,6 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -274,7 +264,7 @@ header .intro-scroll {
 header .intro-scroll:hover,
 header .intro-scroll:focus,
 header .intro-scroll:active {
-  color: #fed136;
+  color: #ddd;
 }
 .header-container {
   width: 100%;
@@ -285,6 +275,22 @@ header .intro-scroll:active {
 }
 #explanation .row {
   margin-top: -75px;
+}
+#explanation h2 {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+#explanation .info {
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  line-height: 25px;
+  font-size: 1.8rem;
+}
+@media (max-width: 800px) {
+  #explanation .info {
+    max-width: 100%;
+  }
 }
 .box {
   height: 150px;
@@ -389,7 +395,7 @@ section h3.section-subheading {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(221, 221, 221, 0.9);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -502,7 +508,7 @@ section h3.section-subheading {
   height: 80px;
   position: absolute;
   z-index: 100;
-  background-color: #fed136;
+  background-color: #ddd;
   color: white;
   border-radius: 100%;
   border: 7px solid #f1f1f1;
@@ -634,14 +640,19 @@ section h3.section-subheading {
 aside.clients img {
   margin: 50px auto;
 }
-section#contact {
-  background-color: #222222;
-  background-image: url('../img/map-image.png');
-  background-position: center;
-  background-repeat: no-repeat;
+section#contact a {
+  color: #333333;
+  font-size: 20px;
+  padding-left: 20px;
+}
+section#contact p {
+  font-size: 40px;
+}
+section#contact p .glyphicon {
+  top: 10px;
 }
 section#contact .section-heading {
-  color: white;
+  color: #222222;
 }
 section#contact .form-group {
   margin-bottom: 25px;
@@ -657,7 +668,7 @@ section#contact .form-group textarea.form-control {
   height: 236px;
 }
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #ddd;
   box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder {
@@ -726,7 +737,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #fed136;
+  background-color: #ddd;
 }
 .btn:focus,
 .btn:active,
@@ -810,11 +821,11 @@ ul.social-buttons li a:active {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #fed136;
+  background: #ddd;
 }
 ::selection {
   text-shadow: none;
-  background: #fed136;
+  background: #ddd;
 }
 img::selection {
   background: transparent;
@@ -823,5 +834,5 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #fed136;
+  webkit-tap-highlight-color: #ddd;
 }

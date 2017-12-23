@@ -166,12 +166,23 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-header {
-    background-image: url('../img/header-bg.jpg');
+.header-container {
+    width: 100%; 
+    overflow: hidden;
+    background-image: url('../img/black_and_white_header_narrow_darker.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     @include background-cover;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+header {
+    position: relative;
+    
+    height: 100%;
     text-align: center;
     color: white;
     .intro-text {
@@ -186,11 +197,18 @@ header {
         }
         .intro-heading {
             @include heading-font;
-            font-weight: 600;
+             font-weight: 700;
             font-size: 50px;
             line-height: 50px;
             margin-bottom: 25px;
+            min-height: 100px;
+            background-image: url("../img/simonandText.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
         }
+
+   
     }
 
     .intro-scroll {
@@ -275,7 +293,7 @@ section {
             max-width: 400px;
             margin: 0 auto;
             .portfolio-hover {
-                background: fade-out($theme-primary, .9);
+                background: fade-out($theme-primary, .5);
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -549,8 +567,15 @@ aside.clients {
 // Contact Section
 
 section#contact {
-    background-color: $gray-darker;
-    background-image: url('../img/map-image.png');
+   
+    p {
+        font-size: 40px;
+        .glyphicon {
+            top: 10px;
+
+        }
+    }
+   
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
@@ -749,4 +774,60 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: $theme-primary;
+}
+
+.soundcloud-frame {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.box {
+    height: 150px;
+    display: table;
+    table-layout: fixed;
+    
+    .service-item {
+      display:table-cell;
+      vertical-align:middle;
+      text-align:center;
+      margin-top: 20px;
+      border: 1px solid $gray-light;
+      background-color: white;
+    }
+   
+     .service-item h2 {
+        margin-top: 20px;
+    }
+}
+
+#explanation {
+   padding: 0;
+   .row {
+        margin-top: -75px;
+   }
+
+   h2 {
+
+    padding-top: 50px;
+    padding-bottom: 10px;
+    //font-weight: 300;
+   }
+
+   .info {
+        text-align: center;
+        max-width: 70%;
+        margin: 0 auto;
+        line-height: 25px;
+        font-size: 1.8rem;
+   }
+
+   @media(max-width:800px) {
+        .info {
+           
+            max-width: 100%;
+          
+        }
+    }
+
 }

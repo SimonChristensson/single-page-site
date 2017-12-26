@@ -81,9 +81,11 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-custom {
+    
     background-color: $gray-darker;
     opacity: 0.8;
     border-color: transparent;
+
     .navbar-brand {
         color: $theme-primary;
         @include script-font;
@@ -114,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
                 @include heading-font;
                 font-weight: 400;
                 letter-spacing: 1px;
-                color: $theme-primary;
+                color: $gray-darker;
                 &:hover,
                 &:focus {
                     color: $gray-darker;
@@ -183,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     position: relative;
-    
+    width: 100%;
     height: 100%;
     text-align: center;
     color: white;
@@ -256,7 +258,7 @@ header {
 // Global Section Styles
 
 section {
-    padding: 100px 0;
+    
     h2.section-heading {
         font-size: 40px;
         margin-top: 0;
@@ -274,7 +276,7 @@ section {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 50px 0;
     }
 }
 
@@ -571,13 +573,13 @@ aside.clients {
 // Contact Section
 
 section#contact {
-   
-    p {
-        font-size: 40px;
-        .glyphicon {
-            top: 10px;
 
-        }
+    font-size: 30px;
+   
+    a {
+        word-wrap: break-word;
+        color: black;
+        margin-bottom: 20px;
     }
    
     background-position: center;
@@ -834,4 +836,8 @@ body {
         }
     }
 
+}
+
+.offset {
+    margin-bottom: 30px;
 }

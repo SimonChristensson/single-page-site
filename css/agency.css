@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Agency v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2017 Start Bootstrap
+ * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 body {
@@ -145,14 +145,14 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-custom .navbar-collapse {
     border-color: rgba(255, 255, 255, 0.98); }
   .navbar-custom .navbar-toggle {
-    background-color: #ddd;
+    border: 0;
     border-color: #ddd;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     color: white;
     font-size: 12px; }
     .navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
-      background-color: #ddd; }
+      background-color: transparent; }
   .navbar-custom .nav li a {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -160,16 +160,16 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
     color: #222222; }
     .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
-      color: #222222;
+      color: #777777;
       outline: none; }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 0;
     color: white;
-    background-color: #ddd; }
+    background-color: #333333; }
   .navbar-custom .navbar-nav > .active > a:hover,
   .navbar-custom .navbar-nav > .active > a:focus {
     color: white;
-    background-color: #c4c4c4; }
+    background-color: #333333; }
 
 @media (min-width: 768px) {
   .navbar-custom {
@@ -187,12 +187,32 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-custom .navbar-nav > .active > a {
       border-radius: 3px; } }
 
+@media (max-width: 768px) {
+  .navbar-custom .nav li a {
+    color: #d9d9d9; }
+    .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
+      color: white;
+      outline: none; }
+  .navbar-custom .nav li:hover, .navbar-custom .nav li:focus {
+    background-color: transparent;
+    color: white;
+    outline: none; } }
+
 @media (min-width: 768px) {
   .navbar-custom.affix {
     background-color: #222222;
     padding: 10px 0; }
     .navbar-custom.affix .navbar-brand {
-      font-size: 1.5em; } }
+      font-size: 1.5em; }
+    .navbar-custom.affix .nav li a {
+      color: #d9d9d9; }
+      .navbar-custom.affix .nav li a:hover, .navbar-custom.affix .nav li a:focus {
+        color: white;
+        outline: none; }
+    .navbar-custom.affix .nav li:hover, .navbar-custom.affix .nav li:focus {
+      background-color: transparent;
+      color: white;
+      outline: none; } }
 
 .header-container {
   width: 100%;
@@ -498,7 +518,7 @@ section#contact {
   background-repeat: no-repeat; }
   section#contact a {
     word-wrap: break-word;
-    color: black;
+    color: #333333;
     margin-bottom: 20px; }
   section#contact .section-heading {
     color: white; }

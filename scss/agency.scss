@@ -100,14 +100,16 @@ h1, h2, h3, h4, h5, h6 {
         border-color: fade-out(white, .02);
     }
     .navbar-toggle {
-        background-color: $theme-primary;
+        //background-color: $theme-primary;
+        border: 0;
         border-color: $theme-primary;
         @include heading-font;
         color: white;
         font-size: 12px;
         &:hover,
         &:focus {
-            background-color: $theme-primary;
+            background-color: transparent;
+            //background-color: $theme-primary;
         }
     }
     .nav {
@@ -119,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
                 color: $gray-darker;
                 &:hover,
                 &:focus {
-                    color: $gray-darker;
+                    color: $gray-light;
                     outline: none;
                 }
             }
@@ -128,12 +130,12 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-nav>.active>a {
         border-radius: 0;
         color: white;
-        background-color: $theme-primary;
+        background-color: $gray-dark;
     }
     .navbar-nav>.active>a:hover,
     .navbar-nav>.active>a:focus {
         color: white;
-        background-color: darken($theme-primary, 10%);
+        background-color: $gray-dark;
     }
 }
 
@@ -154,6 +156,32 @@ h1, h2, h3, h4, h5, h6 {
         .navbar-nav>.active>a {
             border-radius: 3px;
         }
+
+      
+    }
+}
+
+@media(max-width:768px) {
+   .navbar-custom {  
+        .nav {
+            li {
+                a {
+                    color: $gray-lightest;
+                    &:hover,
+                    &:focus {
+                        color: white;
+                        outline: none;
+                    }
+                }
+
+                &:hover,
+                &:focus {
+                        background-color: transparent;
+                        color: white;
+                        outline: none;
+                    }
+            }
+        }
     }
 }
 
@@ -166,6 +194,27 @@ h1, h2, h3, h4, h5, h6 {
         .navbar-brand {
             font-size: 1.5em;
         }
+
+        .nav {
+            li {
+                a {
+                    color: $gray-lightest;
+                    &:hover,
+                    &:focus {
+                        color: white;
+                        outline: none;
+                    }
+                }
+
+                &:hover,
+                &:focus {
+                        background-color: transparent;
+                        color: white;
+                        outline: none;
+                    }
+            }
+        }
+
     }
 }
 
@@ -578,7 +627,7 @@ section#contact {
    
     a {
         word-wrap: break-word;
-        color: black;
+        color: $gray-dark;
         margin-bottom: 20px;
     }
    

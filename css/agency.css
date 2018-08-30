@@ -52,30 +52,30 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
   color: white;
-  background-color: #ddd;
+  background-color: #333333;
   border-color: #ddd;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700; }
   .btn-primary:focus, .btn-primary.focus {
     color: white;
-    background-color: #c4c4c4;
+    background-color: #1a1a1a;
     border-color: #9d9d9d; }
   .btn-primary:hover {
     color: white;
-    background-color: #c4c4c4;
+    background-color: #1a1a1a;
     border-color: #bebebe; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     color: white;
-    background-color: #c4c4c4;
+    background-color: #1a1a1a;
     border-color: #bebebe; }
     .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
     .open > .btn-primary.dropdown-toggle:hover,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle.focus {
       color: white;
-      background-color: #b2b2b2;
+      background-color: #080808;
       border-color: #9d9d9d; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
@@ -84,10 +84,10 @@ h1, h2, h3, h4, h5, h6 {
   fieldset[disabled] .btn-primary:hover,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary.focus {
-    background-color: #ddd;
+    background-color: #333333;
     border-color: #ddd; }
   .btn-primary .badge {
-    color: #ddd;
+    color: #333333;
     background-color: white; }
 
 .btn-xl {
@@ -196,7 +196,9 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-custom .nav li:hover, .navbar-custom .nav li:focus {
     background-color: transparent;
     color: white;
-    outline: none; } }
+    outline: none; }
+  section {
+    margin-bottom: 100px; } }
 
 @media (min-width: 768px) {
   .navbar-custom.affix {
@@ -236,27 +238,17 @@ header {
   height: 100%;
   text-align: center;
   color: white; }
-  header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px; }
-    header .intro-text .intro-lead-in {
-      font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-style: italic;
-      font-size: 22px;
-      line-height: 22px;
-      margin-bottom: 25px; }
-    header .intro-text .intro-heading {
-      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 50px;
-      line-height: 50px;
-      margin-bottom: 25px;
-      min-height: 100px;
-      background-image: url("../img/simonandText.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center; }
+  header .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    min-height: 100px;
+    background-image: url("../img/simonandText.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative; }
   header .intro-scroll {
     font-weight: 600;
     font-size: 50px;
@@ -285,6 +277,9 @@ header {
       font-size: 75px;
       line-height: 75px;
       margin-bottom: 50px; } }
+
+section .section-main-header-container {
+  margin-bottom: 40px; }
 
 section h2.section-heading {
   font-size: 40px;
@@ -407,7 +402,7 @@ section h3.section-subheading {
       height: 80px;
       position: absolute;
       z-index: 100;
-      background-color: #ddd;
+      background-color: #777777;
       color: white;
       border-radius: 100%;
       border: 7px solid #f1f1f1;
